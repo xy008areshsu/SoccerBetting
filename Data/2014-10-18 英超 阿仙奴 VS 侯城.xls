@@ -9,7 +9,7 @@
      <o:Author>Administrator</o:Author>
      <o:Created>2012-05-15T14:57:06</o:Created>
      <o:LastAuthor>User</o:LastAuthor>
-     <o:LastSaved>2015-08-17T14:11:17</o:LastSaved>
+     <o:LastSaved>2015-08-20T15:09:24</o:LastSaved>
     </o:DocumentProperties>
     <o:CustomDocumentProperties>
      <o:KSOProductBuildVer dt:dt="string">2052-9.1.0.5133</o:KSOProductBuildVer>
@@ -48,15 +48,6 @@ br
 	mso-generic-font-family:auto;
 	mso-font-charset:134;}
 .font2
-	{color:windowtext;
-	font-size:12.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:"宋体";
-	mso-generic-font-family:auto;
-	mso-font-charset:134;}
-.font3
 	{color:#800080;
 	font-size:11.0pt;
 	font-weight:400;
@@ -66,7 +57,7 @@ br
 	font-family:"宋体";
 	mso-generic-font-family:auto;
 	mso-font-charset:134;}
-.font4
+.font3
 	{color:#0000FF;
 	font-size:11.0pt;
 	font-weight:400;
@@ -98,7 +89,7 @@ br
 	mso-style-name:"Comma";
 	mso-style-id:3;}
 .style17
-	{mso-number-format:"_ \0022\00A5\0022* \#\,\#\#0\.00_ \;_ \0022\00A5\0022* \\-\#\,\#\#0\.00_ \;_ \0022\00A5\0022* \0022-\0022??_ \;_ \@_ ";
+	{mso-number-format:"_ \\¥* \#\,\#\#0\.00_ \;_ \\¥* \\-\#\,\#\#0\.00_ \;_ \\¥* \0022-\0022??_ \;_ \@_ ";
 	mso-style-name:"Currency";
 	mso-style-id:4;}
 .style18
@@ -110,18 +101,10 @@ br
 	mso-style-name:"Percent";
 	mso-style-id:5;}
 .style20
-	{mso-number-format:"_ \0022\00A5\0022* \#\,\#\#0_ \;_ \0022\00A5\0022* \\-\#\,\#\#0_ \;_ \0022\00A5\0022* \0022-\0022_ \;_ \@_ ";
+	{mso-number-format:"_ \\¥* \#\,\#\#0_ \;_ \\¥* \\-\#\,\#\#0_ \;_ \\¥* \0022-\0022_ \;_ \@_ ";
 	mso-style-name:"Currency[0]";
 	mso-style-id:7;}
 .style21
-	{color:#0000FF;
-	font-size:11.0pt;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:宋体;
-	mso-style-name:"Hyperlink";
-	mso-style-id:8;}
-.style22
 	{color:#800080;
 	font-size:11.0pt;
 	text-decoration:underline;
@@ -129,6 +112,14 @@ br
 	font-family:宋体;
 	mso-style-name:"Followed Hyperlink";
 	mso-style-id:9;}
+.style22
+	{color:#0000FF;
+	font-size:11.0pt;
+	text-decoration:underline;
+	text-underline-style:single;
+	font-family:宋体;
+	mso-style-name:"Hyperlink";
+	mso-style-id:8;}
 td
 	{mso-style-parent:style0;
 	padding-top:1px;
@@ -214,15 +205,14 @@ td
         <x:Panes>
          <x:Pane>
           <x:Number>2</x:Number>
-          <x:ActiveCol>14</x:ActiveCol>
-          <x:ActiveRow>5</x:ActiveRow>
-          <x:RangeSelection>O6</x:RangeSelection>
+          <x:ActiveCol>17</x:ActiveCol>
+          <x:ActiveRow>8</x:ActiveRow>
+          <x:RangeSelection>R9</x:RangeSelection>
          </x:Pane>
          <x:Pane>
           <x:Number>3</x:Number>
          </x:Pane>
         </x:Panes>
-        <x:CodeName>Sheet1</x:CodeName>
         <x:ProtectContents>False</x:ProtectContents>
         <x:ProtectObjects>False</x:ProtectObjects>
         <x:ProtectScenarios>False</x:ProtectScenarios>
@@ -239,17 +229,12 @@ td
      <x:WindowHeight>9405</x:WindowHeight>
      <x:WindowWidth>20400</x:WindowWidth>
     </x:ExcelWorkbook>
-    <x:SupBook>
-     <x:Path>E:\大数据整合\英超\14-15赛季英超第八轮\</x:Path>
-     <x:SheetName>球探网</x:SheetName>
-    </x:SupBook>
    </xml>
   <![endif]-->
  </head>
  <body link="blue" vlink="purple">
   <table width="1800" border="0" cellpadding="0" cellspacing="0" style='width:1350.00pt;border-collapse:collapse;table-layout:fixed;'>
-   <col width="72" span="11" style='mso-width-source:userset;mso-width-alt:2304;'/>
-   <col width="72" span="14" style='width:54.00pt;'/>
+   <col width="72" span="25" style='mso-width-source:userset;mso-width-alt:2304;'/>
    <tr height="20" style='height:15.00pt;mso-height-source:userset;mso-height-alt:300;'>
     <td class="xl24" height="20" width="72" style='height:15.00pt;width:54.00pt;' x:str><span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl25" width="72" style='width:54.00pt;' x:str><span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -291,7 +276,7 @@ td
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>1</td>
-    <td class="xl28" x:str>Betfair(<span style='display:none;'>英国)</span></td>
+    <td class="xl28" x:str>Betfair(<font class="font0">英国)</font></td>
     <td class="xl28" align="right" x:num="1.3899999999999999">1.39<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="5.4000000000000004">5.40<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="10.">10.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -346,7 +331,7 @@ td
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>4</td>
-    <td class="xl28" x:str>Interwett<span style='display:none;'>en(塞浦路斯)</span></td>
+    <td class="xl28" x:str>Interwett<font class="font0">en(塞浦路斯)</font></td>
     <td class="xl28" align="right" x:num="1.3">1.30<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="5.">5.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="9.">9.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -356,11 +341,13 @@ td
     <td class="xl28" align="right" x:num="0.91800000000000004">0.92<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.95999999999999996">0.96<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.91199989999999997">0.91<span style='mso-spacerun:yes;'>&nbsp;</span></td>
-    <td colspan="14" style='mso-ignore:colspan;'></td>
+    <td colspan="6" style='mso-ignore:colspan;'></td>
+    <td align="right" x:num>1</td>
+    <td colspan="7" style='mso-ignore:colspan;'></td>
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>5</td>
-    <td class="xl28" x:str>SNAI(意大<span style='display:none;'>利)</span></td>
+    <td class="xl28" x:str>SNAI(意大<font class="font0">利)</font></td>
     <td class="xl28" align="right" x:num="1.3300000000000001">1.33<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="5.">5.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="9.">9.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -370,11 +357,13 @@ td
     <td class="xl28" align="right" x:num="0.91800000000000004">0.92<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.94999999999999996">0.95<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="1.02">1.02<span style='mso-spacerun:yes;'>&nbsp;</span></td>
-    <td colspan="14" style='mso-ignore:colspan;'></td>
+    <td colspan="6" style='mso-ignore:colspan;'></td>
+    <td align="right" x:num>1</td>
+    <td colspan="7" style='mso-ignore:colspan;'></td>
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>6</td>
-    <td class="xl28" x:str>威廉希尔(<span style='display:none;'>英国)</span></td>
+    <td class="xl28" x:str>威廉希尔(<font class="font0">英国)</font></td>
     <td class="xl28" align="right" x:num="1.3500000000000001">1.35<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="4.7999999999999998">4.80<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="9.">9.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -384,11 +373,13 @@ td
     <td class="xl28" align="right" x:num="0.97920010000000002">0.98<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.83999999999999997">0.84<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.90000000000000002">0.90<span style='mso-spacerun:yes;'>&nbsp;</span></td>
-    <td colspan="14" style='mso-ignore:colspan;'></td>
+    <td colspan="6" style='mso-ignore:colspan;'></td>
+    <td align="right" x:num>1</td>
+    <td colspan="7" style='mso-ignore:colspan;'></td>
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>7</td>
-    <td class="xl28" x:str>bwin(奥地<span style='display:none;'>利)</span></td>
+    <td class="xl28" x:str>bwin(奥地<font class="font0">利)</font></td>
     <td class="xl28" align="right" x:num="1.3600000000000001">1.36<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="4.75">4.75<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="8.">8.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -398,11 +389,13 @@ td
     <td class="xl28" align="right" x:num="0.95199999999999996">0.95<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.90000000000000002">0.90<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="0.90000000000000002">0.90<span style='mso-spacerun:yes;'>&nbsp;</span></td>
-    <td colspan="14" style='mso-ignore:colspan;'></td>
+    <td colspan="6" style='mso-ignore:colspan;'></td>
+    <td align="right" x:num>1</td>
+    <td colspan="7" style='mso-ignore:colspan;'></td>
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>8</td>
-    <td class="xl28" x:str>bet 365(<span style='display:none;'>英国)</span></td>
+    <td class="xl28" x:str>bet 365(<font class="font0">英国)</font></td>
     <td class="xl28" align="right" x:num="1.3">1.30<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="5.5">5.50<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="9.">9.00<span style='mso-spacerun:yes;'>&nbsp;</span></td>
@@ -412,11 +405,13 @@ td
     <td class="xl28" align="right" x:num="0.95199999999999996">0.95<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="1.02">1.02<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="1.02">1.02<span style='mso-spacerun:yes;'>&nbsp;</span></td>
-    <td colspan="14" style='mso-ignore:colspan;'></td>
+    <td colspan="6" style='mso-ignore:colspan;'></td>
+    <td align="right" x:num>1</td>
+    <td colspan="7" style='mso-ignore:colspan;'></td>
    </tr>
    <tr height="18" style='height:13.50pt;mso-height-source:userset;mso-height-alt:270;'>
     <td height="18" align="right" style='height:13.50pt;' x:num>9</td>
-    <td class="xl28" x:str>博天堂(瓦<span style='display:none;'>努阿图)</span></td>
+    <td class="xl28" x:str>博天堂(瓦<font class="font0">努阿图)</font></td>
     <td class="xl28" align="right" x:num="1.3">1.30<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="5.25">5.25<span style='mso-spacerun:yes;'>&nbsp;</span></td>
     <td class="xl28" align="right" x:num="8.5">8.50<span style='mso-spacerun:yes;'>&nbsp;</span></td>
