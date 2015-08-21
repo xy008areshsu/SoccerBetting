@@ -24,8 +24,8 @@ def parse_file(datafile):
     sheet = workbook.sheet_by_index(0)
 
     data = []
-    data.append(['Station', 'Year', 'Month', 'Day', 'Hour', 'Max Load'])
-    regions = ['COAST', 'EAST', 'FAR_WEST', 'NORTH', 'NORTH_C', 'SOUTHERN', 'SOUTH_C', 'WEST']
+    #data.append(['Station', 'Year', 'Month', 'Day', 'Hour', 'Max Load'])
+    #regions = ['COAST', 'EAST', 'FAR_WEST', 'NORTH', 'NORTH_C', 'SOUTHERN', 'SOUTH_C', 'WEST']
 
     for i, r in enumerate(regions):
         level = [r]
