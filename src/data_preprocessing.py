@@ -48,6 +48,39 @@ def delet_clx(dir, outputdir, list_filenames, li, flag = 0):
         except IOError:
             pass
 
+def fill_missing_data(dir, list_filenames):
+
+    l_list = []
+
+    for fn in list_filenames:
+        try :
+            df = pd.read_csv(dir+fn, sep=',')
+            for i in range(0, df.shape[0]):
+                for j in range(4, df.shape[1], 3):
+                    if(pd.isnull(df.iloc[i, j])):
+                        if(j> 6):
+                            df.iloc[i, j] = df.iloc[i, j-3] #求均值可能更合理
+                            df.iloc[i, j+1] = df.iloc[i, j-3+1]
+                            df.iloc[i, j+2] = df.iloc[i, j-3+2]
+                        elif(pd.notnull(df.iloc[i, j+3])):
+                            df.iloc[i, j] = df.iloc[i, j+3] #求均值可能更合理
+                            df.iloc[i, j+1] = df.iloc[i, j+3+1]
+                            df.iloc[i, j+2] = df.iloc[i, j+3+2]
+                        else:
+                            #i1_0910.csv line 360
+                            l_list.append(i)
+                            break
+
+            for i in l_list:
+                df = df.drop(i)
+            l_list.clear()
+            df.to_csv(dir + fn, encoding='utf-8', index=False)
+
+
+        except IOError:
+            pass
+
+
 rootdir = '../data/'
 tmpdir = rootdir+'tmp/'
 resdir = rootdir+'res/'
@@ -79,6 +112,8 @@ for (k,v) in dict.items():
         li.append(k)
 
 delet_clx(tmpdir, resdir, list_filenames, li, li.__len__()-1)
+
+fill_missing_data(resdir, list_filenames)
 print('DONE')
 
 
