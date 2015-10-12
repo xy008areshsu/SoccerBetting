@@ -4,6 +4,7 @@ import numpy as np
 import os
 import os.path
 import shutil
+import glob
 
 def create_dict(fn):
     dict = {}
@@ -32,7 +33,7 @@ def delet_clx(dir, outputdir, list_filenames, li, flag = 0):
     #count_tmp = 0   #判断一个文件里是否有重复列
     for fn in list_filenames:
         try:
-            df = pd.read_csv(dir+fn, sep=',')
+            df = pd.read_csv(dir+fn, error_bad_lines=False, sep=',')
             #count_tmp += 1
             for cl in df.columns:
                 if cl not in li:
@@ -48,9 +49,16 @@ def delet_clx(dir, outputdir, list_filenames, li, flag = 0):
         except IOError:
             pass
 
+def files_contact(dir):
+    df = pd.DataFrame()
+    for fn in glob.glob(dir+'*.csv'):
+        df = df.append(pd.read_csv(fn, sep =','))
+    return df
+
 rootdir = '..\\data\\'
 tmpdir = rootdir+'tmp\\'
 resdir = rootdir+'res\\'
+
 try:
     shutil.rmtree(resdir)
     shutil.rmtree(tmpdir)
@@ -64,8 +72,8 @@ if not os.path.isdir(resdir):
 
 dict = create_dict(rootdir+'processed_data\\dict.txt')
 list_filenames_tmp = []
-list_filenames = find_allfiles(rootdir+'processed_data\\', 'csv')
-delet_clx(rootdir+'processed_data\\', tmpdir, list_filenames, dict.keys())
+list_filenames = find_allfiles(rootdir+'raw\\', 'csv')
+delet_clx(rootdir+'raw\\', tmpdir, list_filenames, dict.keys())
 
 for fn in list_filenames_tmp:
     if fn in list_filenames:
@@ -79,7 +87,47 @@ for (k,v) in dict.items():
         li.append(k)
 
 delet_clx(tmpdir, resdir, list_filenames, li, li.__len__()-1)
+
+df = files_contact(resdir)
+df_team_names = df.loc[:,('HomeTeam','AwayTeam')]
+df_team_names = pd.get_dummies(df_team_names)
+df_goals = df.loc[:,('FTHG','FTAG','HTHG','HTAG')]
+df = df.drop(['HomeTeam','AwayTeam','FTHG','FTAG','HTHG','HTAG'],axis=1)
+
+list=[]
+df = df.T
+for i in range(0, df.shape[0],3):
+    list.append('a')
+    list.append('b')
+    list.append('c')
+df['name']=pd.Series(list, index=df.index)
+df=df.groupby('name').transform(lambda x:x.fillna(x.mean()))
+df = df.T
+
+df_t = pd.concat([df_team_names, df_goals,df],axis=1)
+
+df_t.to_csv(rootdir+'result.csv', encoding='utf-8', index=False)
+shutil.rmtree(resdir)
+shutil.rmtree(tmpdir)
 print('DONE')
+
+"""
+df = pd.read_csv(rootdir+'t.csv', sep=',')
+list=[]
+df = df.T
+for i in range(0, df.shape[0],3):
+    list.append('a')
+    list.append('b')
+    list.append('c')
+df['name']=pd.Series(list, index=df.index)
+df=df.groupby('name').transform(lambda x:x.fillna(x.mean()))
+#del(df['name'])
+df = df.T
+
+df.to_csv(rootdir+'result.csv', encoding='utf-8', index=False)
+
+print('DONE')
+"""
 
 
 
