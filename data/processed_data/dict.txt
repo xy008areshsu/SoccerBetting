@@ -1,3 +1,5 @@
+HomeTeam = Home Team
+AwayTeam = Away Team
 FTHG = Full Time Home Team Goals
 FTAG = Full Time Away Team Goals
 HTHG = Half Time Home Team Goals
@@ -41,70 +43,3 @@ VCA = VC Bet away win odds
 WHH = William Hill home win odds
 WHD = William Hill draw odds
 WHA = William Hill away win odds
-
-Bb1X2 = Number of BetBrain bookmakers used to calculate match odds averages and maximums
-BbMxH = Betbrain maximum home win odds
-BbAvH = Betbrain average home win odds
-BbMxD = Betbrain maximum draw odds
-BbAvD = Betbrain average draw win odds
-BbMxA = Betbrain maximum away win odds
-BbAvA = Betbrain average away win odds
-
-
-
-
-
-BbOU = Number of BetBrain bookmakers used to calculate over/under 2.5 goals (total goals) averages and maximums
-BbMx>2.5 = Betbrain maximum over 2.5 goals
-BbAv>2.5 = Betbrain average over 2.5 goals
-BbMx<2.5 = Betbrain maximum under 2.5 goals
-BbAv<2.5 = Betbrain average under 2.5 goals
-
-GB>2.5 = Gamebookers over 2.5 goals
-GB<2.5 = Gamebookers under 2.5 goals
-B365>2.5 = Bet365 over 2.5 goals
-B365<2.5 = Bet365 under 2.5 goals
-
-
-Key to Asian handicap betting odds:
-
-BbAH = Number of BetBrain bookmakers used to Asian handicap averages and maximums
-BbAHh = Betbrain size of handicap (home team)
-BbMxAHH = Betbrain maximum Asian handicap home team odds
-BbAvAHH = Betbrain average Asian handicap home team odds
-BbMxAHA = Betbrain maximum Asian handicap away team odds
-BbAvAHA = Betbrain average Asian handicap away team odds
-
-GBAHH = Gamebookers Asian handicap home team odds
-GBAHA = Gamebookers Asian handicap away team odds
-GBAH = Gamebookers size of handicap (home team)
-LBAHH = Ladbrokes Asian handicap home team odds
-LBAHA = Ladbrokes Asian handicap away team odds
-LBAH = Ladbrokes size of handicap (home team)
-B365AHH = Bet365 Asian handicap home team odds
-B365AHA = Bet365 Asian handicap away team odds
-B365AH = Bet365 size of handicap (home team)
-
-Football-Data would like to acknowledge the following sources which have been utilised in the compilation of Football-Data's results and odds files.
-
-Historical results:
-International Soccer Server - http://sunsite.tut.fi/rec/riku/soccer.html
-European Football - http://www.eurofootball.be/
-RSSSF Archive - http://www.rsssf.com/
-
-Current results (full time, half time)
-TBWSport - http://www.tbwsport.com
-Livescore- http://www.livescore.com
-
-Match statistics
-Sportinglife, ESPN Soccer, Bundesliga.de, Gazzetta.it and Football.fr
-
-Bookmakers betting odds
-Betbrain - http://www.betbrain.com
-Betbase - http://www.betbase.info
-
-Betting odds for weekend games are collected Friday afternoons, and on Tuesday afternoons for midweek games.
-
-Additional match statistics (corners, shots, bookings, referee etc.) for the 2000/01 and 2001/02 seasons for the English, Scottish and German leagues were provided by Sports.com (now under new ownership and no longer available).
-
-2015
