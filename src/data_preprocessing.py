@@ -89,8 +89,18 @@ for (k,v) in dict.items():
 delet_clx(tmpdir, resdir, list_filenames, li, li.__len__()-1)
 
 df = files_contact(resdir)
+
 df_team_names = df.loc[:,('HomeTeam','AwayTeam')]
-df_team_names = pd.get_dummies(df_team_names)
+df_team_names_t = df_team_names['HomeTeam'].append(df_team_names['AwayTeam'])
+#df_team_names = pd.get_dummies(df_team_names)
+df_team_names_t = df_team_names_t.drop_duplicates()
+dic_team_names_nondup = {ltr: df_team_names_t.values.tolist().index(ltr) for ltr in df_team_names_t}
+to_bin = lambda i: '{0:08b}'.format(i)
+dic_team_names_nondup_bin = {key : list(to_bin(val)) for key,val in dic_team_names_nondup.items()}
+
+lst_c1 = ['bit0','bit1','bit2','bit3','bit4','bit5','bit6','bit7']
+lst_c2 = ['bit8','bit9','bit10','bit11','bit12','bit13','bit14','bit15']
+
 df_goals = df.loc[:,('FTHG','FTAG','HTHG','HTAG')]
 df = df.drop(['HomeTeam','AwayTeam','FTHG','FTAG','HTHG','HTAG'],axis=1)
 
@@ -104,30 +114,17 @@ df['name']=pd.Series(list, index=df.index)
 df=df.groupby('name').transform(lambda x:x.fillna(x.mean()))
 df = df.T
 
-df_t = pd.concat([df_team_names, df_goals,df],axis=1)
+df_team_names_bin = pd.DataFrame()
+df_team_names_bin[lst_c1] = df_team_names['HomeTeam'].apply(lambda x: pd.Series(dic_team_names_nondup_bin[x]))
+df_team_names_bin[lst_c2] = df_team_names['AwayTeam'].apply(lambda x: pd.Series(dic_team_names_nondup_bin[x]))
+
+df_t = pd.concat([df_team_names_bin, df_goals,df],axis=1)
 
 df_t.to_csv(rootdir+'result.csv', encoding='utf-8', index=False)
 shutil.rmtree(resdir)
 shutil.rmtree(tmpdir)
 print('DONE')
 
-"""
-df = pd.read_csv(rootdir+'t.csv', sep=',')
-list=[]
-df = df.T
-for i in range(0, df.shape[0],3):
-    list.append('a')
-    list.append('b')
-    list.append('c')
-df['name']=pd.Series(list, index=df.index)
-df=df.groupby('name').transform(lambda x:x.fillna(x.mean()))
-#del(df['name'])
-df = df.T
-
-df.to_csv(rootdir+'result.csv', encoding='utf-8', index=False)
-
-print('DONE')
-"""
 
 
 
