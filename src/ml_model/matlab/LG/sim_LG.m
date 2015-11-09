@@ -20,7 +20,7 @@
 clear ; close all; clc
 
 %% Setup the parameters you will use for this part of the exercise
-input_layer_size  = 38;  % 20x20 Input Images of Digits
+input_layer_size  = 19;  % 20x20 Input Images of Digits
 num_labels = 3;          % 10 labels, from 1 to 10   
                           % (note that we have mapped "0" to label 10)
 
@@ -29,14 +29,10 @@ num_labels = 3;          % 10 labels, from 1 to 10
 %  You will be working with a dataset that contains handwritten digits.
 %
 
-% gen_regions;
-data = load('../../../../data/clean_data.csv');  
-data = data(:, 2:end);  % delete  the first column, which is the number column
+data = csvread('../../../../data/clean_data.csv', 1);  
 data = data(randperm(size(data, 1)), :);
 X = data(1:floor(0.9 * size(data, 1)), 1:input_layer_size);
 y = data(1:floor(0.9 * size(data, 1)), size(data, 2));
-% y(y==1) = 2;
-% y(y==0) = 1;
 
 X_test = data(floor(0.9 * size(data, 1)) : end, 1:input_layer_size);
 y_test = data(floor(0.9 * size(data, 1)) : end, size(data, 2));
@@ -55,7 +51,7 @@ pause;
 
 fprintf('\nTraining One-vs-All Logistic Regression...\n')
 
-max_iter = 50000;
+max_iter = 1000;
 lambda = 0;
 [all_theta] = oneVsAll(X, y, num_labels, lambda, max_iter);
 
@@ -69,82 +65,6 @@ pause;
 %  After ...
 pred = predictOneVsAll(all_theta, X_test);
 
-fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred(1:end) == y_test(1:end))) * 100);
+fprintf('\nTest Set Accuracy: %f\n', mean(double(pred(1:end) == y_test(1:end))) * 100);
 
-%% Plot Decision boundary for each region
-% figure
-% plot(s_N_v, s_N_w, 'gx', 'LineWidth', 4)
-% hold
-% plot(s_FS_v, s_FS_w, 'bx', 'LineWidth', 4);
-% plot(s_F_v, s_F_w, 'rx', 'LineWidth', 4)
-% h = ezplot('-10.941428   + (11.581222 ) * x + (-13.016312 ) * y  = 0', [0 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% title('Decision Boundary for class 1')
-% grid
-% 
-% figure
-% plot(s_N_v, s_N_w, 'gx', 'LineWidth', 4)
-% hold
-% plot(s_FS_v, s_FS_w, 'bx', 'LineWidth', 4);
-% plot(s_F_v, s_F_w, 'rx', 'LineWidth', 4)
-% h = ezplot('(18.518992 )  + (0.001) * x + (-2.328944 ) * y = 0', [0 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% title('Decision Boundary for class 2')
-% grid
-% 
-% 
-% figure
-% plot(s_N_v, s_N_w, 'gx', 'LineWidth', 4)
-% hold
-% plot(s_FS_v, s_FS_w, 'bx', 'LineWidth', 4);
-% plot(s_F_v, s_F_w, 'rx', 'LineWidth', 4)
-% h = ezplot('( -12.382877 )  + (5.631413) * x + (-6.078795  ) * y = 0', [0 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% title('Decision Boundary for class 3')
-% grid
-
-% figure
-% plot(s_N_v, s_N_w, 'gx', 'LineWidth', 4)
-% hold
-% plot(s_FS_v, s_FS_w, 'bx', 'LineWidth', 4);
-% plot(s_F_v, s_F_w, 'rx', 'LineWidth', 4)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * x * x + %f * y * y + %f * (x ^ 3) + %f * (y ^ 3) + %f * (x^4) + %f * (y ^ 4)', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7),theta(8), theta(9)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y', theta(1), theta(2),theta(3)), [10 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * x * x + %f * y * y', theta(1), theta(2),theta(3), theta(4), theta(5)), [10 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * x * x + %f * y * y + %f * (x ^ 3) + %f * (y ^ 3) + %f * (x^4) + %f * (y ^ 4) + %f * (x ^ 5) + %f * (y ^ 5)', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7),theta(8), theta(9), theta(10), theta(11)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * x * x + %f * y * y + %f * (x ^ 3) + %f * (y ^ 3) + %f * (x^4) + %f * (y ^ 4)+ %f * (x ^ 5) + %f * (y ^ 5) + %f * (x * y) + %f*(x * x * y) + %f * (x * y * y)', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7),theta(8), theta(9), theta(10), theta(11), theta(12), theta(13), theta(14)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * x * x + %f * (x ^ 3) + %f * (x^4) + %f * (x ^ 5) + %f * (y ^ 5) + %f * y ', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7), theta(8)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * (y ^ 2) + %f * (y ^ 3) + %f * (y^4) + %f * (y ^ 5) ', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * (x ^ 2) + %f * (x ^ 3) + %f * (x^4) + %f * (x ^ 5) ', theta(1), theta(2),theta(3),theta(4),theta(5),theta(6),theta(7)), [10 35 0 50]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * (x ^ 2) + %f * (x * y) + %f * (y ^ 2) + %f * (x ^ 3)+ %f * (x ^ 2 * y)+ %f * (x * (y ^ 2))+ %f * (y ^ 3) + %f * (x ^ 4)+ %f * ((x ^ 3) * y)+ %f * ((x ^ 2) * (y ^ 2))+ %f * ( x * (y ^ 3)) + %f * ( y ^ 4)', theta(1) + 2, theta(2),theta(3),theta(4),theta(5),theta(6),theta(7),theta(8),theta(9),theta(10),theta(11),theta(12),theta(13),theta(14),theta(15)));
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(sprintf('%f + %f * x + %f * y + %f * (x ^ 2) + %f * (x * y) + %f * (y ^ 2) + %f * (x ^ 3)+ %f * (x ^ 2 * y)+ %f * (x * (y ^ 2))+ %f * (y ^ 3) + %f * (x ^ 4)+ %f * ((x ^ 3) * y)+ %f * ((x ^ 2) * (y ^ 2))+ %f * ( x * (y ^ 3)) + %f * ( y ^ 4) + %f * (x ^ 5) + %f * (x ^ 4 * y)+ %f * ((x ^ 3) * (y ^ 2))+ %f * ((x ^ 2) * (y ^ 3))+ %f * ( x * (y ^ 4)) + %f * ( y ^ 5)', theta(1) + 2, theta(2),theta(3),theta(4),theta(5),theta(6),theta(7),theta(8),theta(9),theta(10),theta(11),theta(12),theta(13),theta(14),theta(15),theta(16),theta(17),theta(18),theta(19),theta(20),theta(21)), [10 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% grid
-% 
-% 
-% 
-% h = ezplot(' -0.416533     + (-0.190198 ) * x + ( -0.091136 ) * y + (-0.068909)* x * x + (0.035498 ) * y * y + (-0.013990) *(x^3) + ( 0.048264  ) * (y^3) + (  0.000144  ) * (x^4) + (-0.001283 ) *(y^4) = 0', [10 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot(' -27.844428     + ( 11.760700 ) * x + (-12.437562 ) * y  = 0', [15 17 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% h = ezplot('  -25.511700      + ( 6.254503  ) * x + ( -6.276468 ) * y  = 0', [18 25 0 25]);
-% set(h, 'Color', 'black', 'LineWidth', 2)
-% title('Decision Boundary for class 1')
-% grid
-% 
-% fprintf('Number of testing data: %d: \n', size(y,1))
-% fprintf('Number of mis-mapping from 3 to 1: %d%%: \n', size(find(y == 3 & pred == 1), 1)  / size(y, 1) * 100)
-% fprintf('Fraction of mis-mapping from 2 to 1: %d%%: \n', size(find(y == 2 & pred == 1), 1) / size(y, 1) * 100)
-% fprintf('Fraction of mis-mapping from 3 to 2: %d%%: \n', size(find(y == 3 & pred == 2), 1) / size(y, 1) * 100)
-% fprintf('Fraction of mis-mapping from 1 to 2: %d%%: \n', size(find(y == 1 & pred == 2), 1) / size(y, 1) * 100)
-% fprintf('Fraction of mis-mapping from 2 to 3: %d%%: \n', size(find(y == 2 & pred == 3), 1) / size(y, 1) * 100)
-% fprintf('Fraction of mis-mapping from 1 to 3: %d%%: \n', size(find(y == 1 & pred == 3), 1) / size(y, 1) * 100)
+csvwrite('theta.csv', all_theta)

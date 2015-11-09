@@ -1,12 +1,13 @@
 clear; clc; close all
 
 %% Setup the parameters you will use for this exercise
-input_layer_size  = 19;  
+input_layer_size  = 38;  
 hidden_layer_size = 100;   
 num_labels = 3;   % clean_data.csv last column is the game result, 1 is home win, 2 is home draw, 3 is home lose
-feature_size = 19;
+feature_size = 38;
 
-data = csvread('../../../../data/clean_data.csv', 1);  
+data = csvread('../../../../data/clean_data.csv');  
+data = data(:, 2:end);  % delete  the first column, which is the number column
 data = data(randperm(size(data, 1)), :);
 X = data(1:floor(0.9 * size(data, 1)), 1:feature_size);
 y = data(1:floor(0.9 * size(data, 1)), size(data, 2));
@@ -81,8 +82,8 @@ Theta1 = reshape(nn_params(1:hidden_layer_size * (input_layer_size + 1)), ...
 
 Theta2 = reshape(nn_params((1 + (hidden_layer_size * (input_layer_size + 1))):end), ...
                  num_labels, (hidden_layer_size + 1));
-% csvwrite('Theta1.csv', Theta1);
-% csvwrite('Theta2.csv', Theta2);
+% csvwrite('../../data/version_Theta1.csv', Theta1);
+% csvwrite('../../data/version_Theta2.csv', Theta2);
 
 
 fprintf('Program paused. Press enter to continue.\n');
@@ -98,7 +99,7 @@ pause;
 threshold = 0.5;
 [pred, ex_time] = predict(Theta1, Theta2, X_test, threshold);
 
-fprintf('\nTest Set Accuracy: %f\n', mean(double(pred == y_test)) * 100);
+fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y_test)) * 100);
 
 [pred, ex_time] = predict(Theta1, Theta2, X, threshold);
 
