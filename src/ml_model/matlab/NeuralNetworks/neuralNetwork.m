@@ -1,10 +1,10 @@
 clear; clc; close all
 
 %% Setup the parameters you will use for this exercise
-input_layer_size  = 19;  
+input_layer_size  = 37;  
 hidden_layer_size = 100;   
 num_labels = 3;   % clean_data.csv last column is the game result, 1 is home win, 2 is home draw, 3 is home lose
-feature_size = 19;
+feature_size = 37;
 
 data = csvread('../../../../data/clean_data.csv', 1);  
 data = data(randperm(size(data, 1)), :);
@@ -96,11 +96,11 @@ pause;
 %  you compute the training set accuracy.
 
 threshold = 0.5;
-[pred, ex_time] = predict(Theta1, Theta2, X_test, threshold);
+[pred, ex_time, pred_val] = predict(Theta1, Theta2, X_test, threshold);
 
 fprintf('\nTest Set Accuracy: %f\n', mean(double(pred == y_test)) * 100);
 
-[pred, ex_time] = predict(Theta1, Theta2, X, threshold);
+[pred, ex_time, pred_val] = predict(Theta1, Theta2, X, threshold);
 
 fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred == y)) * 100);
 

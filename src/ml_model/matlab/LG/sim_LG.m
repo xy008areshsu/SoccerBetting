@@ -20,7 +20,7 @@
 clear ; close all; clc
 
 %% Setup the parameters you will use for this part of the exercise
-input_layer_size  = 19;  % 20x20 Input Images of Digits
+input_layer_size  = 37;  % 20x20 Input Images of Digits
 num_labels = 3;          % 10 labels, from 1 to 10   
                           % (note that we have mapped "0" to label 10)
 
@@ -63,8 +63,14 @@ pause;
 
 %% ================ Part 3: Predict for One-Vs-All ================
 %  After ...
-pred = predictOneVsAll(all_theta, X_test);
+[pred, pred_val] = predictOneVsAll(all_theta, X);
+
+fprintf('\nTraining Set Accuracy: %f\n', mean(double(pred(1:end) == y(1:end))) * 100);
+
+[pred, pred_val] = predictOneVsAll(all_theta, X_test);
 
 fprintf('\nTest Set Accuracy: %f\n', mean(double(pred(1:end) == y_test(1:end))) * 100);
+
+
 
 csvwrite('theta.csv', all_theta)
