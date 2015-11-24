@@ -2,25 +2,345 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6513b67a-d0ec-4016-b685-b06cc33bf25f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/gaussianKernel.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/getVocabList.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/linearKernel.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/model.mat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/plotData.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/plotData1.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/porterStemmer.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/readFile.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/svm.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/svmPredict.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/svmTrain.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/visualizeBoundary.m" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ml_model/matlab/SVM/visualizeBoundaryLinear.m" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/documentation/BettingStrategyLPModel.docx" afterPath="$PROJECT_DIR$/documentation/BettingStrategyLPModel.docx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refs/Journal of Sports Economics-2007-Archontakis-295-308.pdf" afterPath="$PROJECT_DIR$/refs/Journal of Sports Economics-2007-Archontakis-295-308.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refs/epjds29.pdf" afterPath="$PROJECT_DIR$/refs/epjds29.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/ex3data1.mat" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/ex3data1.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/grid_search_cv_splits.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/grid_search_cv_splits.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/grid_search_parameters.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/grid_search_parameters.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/model.mat" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/model.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/parallel_text_clf.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/parallel_text_clf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/parallel_text_clf_average.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/parallel_text_clf_average.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/predictive_modeling_data_flow.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/predictive_modeling_data_flow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refs/soccer_betting_using_ML.pdf" afterPath="$PROJECT_DIR$/refs/soccer_betting_using_ML.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/supervised.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/supervised.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/images/supervised_scikit_learn.png" afterPath="$PROJECT_DIR$/src/ml_model/python/images/supervised_scikit_learn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/t10k-images-idx3-ubyte.gz" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/t10k-images-idx3-ubyte.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/t10k-labels-idx1-ubyte.gz" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/t10k-labels-idx1-ubyte.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/train-images-idx3-ubyte.gz" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/train-images-idx3-ubyte.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/train-labels-idx1-ubyte.gz" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/MNIST_data/train-labels-idx1-ubyte.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refs/足球盘口概论 - 副本.doc" afterPath="$PROJECT_DIR$/refs/足球盘口概论 - 副本.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/refs/足球盘口概论.doc" afterPath="$PROJECT_DIR$/refs/足球盘口概论.doc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/.name" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/.name" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1.csv" afterPath="$PROJECT_DIR$/data/raw/D1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0001.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0102.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0203.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0304.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0405.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0506.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0607.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0708.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0809.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_0910.csv" afterPath="$PROJECT_DIR$/data/raw/D1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_1011.csv" afterPath="$PROJECT_DIR$/data/raw/D1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_1112.csv" afterPath="$PROJECT_DIR$/data/raw/D1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_1213.csv" afterPath="$PROJECT_DIR$/data/raw/D1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/D1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/D1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/D1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/D1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/D1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0.csv" afterPath="$PROJECT_DIR$/data/raw/E0.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/betting_strategy/test.m" afterPath="$PROJECT_DIR$/src/betting_strategy/test.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0001.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0102.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0203.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0304.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0405.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0506.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0607.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0708.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0809.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_0910.csv" afterPath="$PROJECT_DIR$/data/raw/E0_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_1011.csv" afterPath="$PROJECT_DIR$/data/raw/E0_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_1112.csv" afterPath="$PROJECT_DIR$/data/raw/E0_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_1213.csv" afterPath="$PROJECT_DIR$/data/raw/E0_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_1314.csv" afterPath="$PROJECT_DIR$/data/raw/E0_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_1415.csv" afterPath="$PROJECT_DIR$/data/raw/E0_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E0_9900.csv" afterPath="$PROJECT_DIR$/data/processed_data/E0_9900.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E0_9900.csv" afterPath="$PROJECT_DIR$/data/raw/E0_9900.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E1.csv" afterPath="$PROJECT_DIR$/data/processed_data/E1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E1.csv" afterPath="$PROJECT_DIR$/data/raw/E1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/E1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/E1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/E1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/E1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E2.csv" afterPath="$PROJECT_DIR$/data/processed_data/E2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E2.csv" afterPath="$PROJECT_DIR$/data/raw/E2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E2_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/E2_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E2_1314.csv" afterPath="$PROJECT_DIR$/data/raw/E2_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E2_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/E2_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E2_1415.csv" afterPath="$PROJECT_DIR$/data/raw/E2_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E3.csv" afterPath="$PROJECT_DIR$/data/processed_data/E3.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E3.csv" afterPath="$PROJECT_DIR$/data/raw/E3.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E3_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/E3_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E3_1314.csv" afterPath="$PROJECT_DIR$/data/raw/E3_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/E3_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/E3_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/E3_1415.csv" afterPath="$PROJECT_DIR$/data/raw/E3_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/EC.csv" afterPath="$PROJECT_DIR$/data/processed_data/EC.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/EC.csv" afterPath="$PROJECT_DIR$/data/raw/EC.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/EC_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/EC_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/EC_1314.csv" afterPath="$PROJECT_DIR$/data/raw/EC_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/EC_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/EC_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/EC_1415.csv" afterPath="$PROJECT_DIR$/data/raw/EC_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1.csv" afterPath="$PROJECT_DIR$/data/raw/F1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0001.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0102.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0203.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0304.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0405.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0506.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0607.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0708.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0809.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_0910.csv" afterPath="$PROJECT_DIR$/data/raw/F1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_1011.csv" afterPath="$PROJECT_DIR$/data/raw/F1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_1112.csv" afterPath="$PROJECT_DIR$/data/raw/F1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_1213.csv" afterPath="$PROJECT_DIR$/data/raw/F1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/F1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/F1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/F1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/F1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/F1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1.csv" afterPath="$PROJECT_DIR$/data/raw/I1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0001.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0102.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0203.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0304.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0405.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0506.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0607.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0708.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0809.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_0910.csv" afterPath="$PROJECT_DIR$/data/raw/I1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_1011.csv" afterPath="$PROJECT_DIR$/data/raw/I1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_1112.csv" afterPath="$PROJECT_DIR$/data/raw/I1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_1213.csv" afterPath="$PROJECT_DIR$/data/raw/I1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/I1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/I1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/I1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/I1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/I1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/.ipynb_checkpoints/ML_Model-checkpoint.ipynb" afterPath="$PROJECT_DIR$/src/ml_model/python/.ipynb_checkpoints/ML_Model-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1.csv" afterPath="$PROJECT_DIR$/data/raw/N1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0001.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0102.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0203.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0304.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0405.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0506.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0607.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0708.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0809.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_0910.csv" afterPath="$PROJECT_DIR$/data/raw/N1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_1011.csv" afterPath="$PROJECT_DIR$/data/raw/N1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_1112.csv" afterPath="$PROJECT_DIR$/data/raw/N1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_1213.csv" afterPath="$PROJECT_DIR$/data/raw/N1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/N1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/N1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/N1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/N1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/N1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1.csv" afterPath="$PROJECT_DIR$/data/raw/SP1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0001.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0001.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0001.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0102.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0102.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0102.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0203.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0203.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0203.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0304.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0304.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0304.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0405.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0405.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0405.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0506.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0506.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0506.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0607.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0607.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0607.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0708.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0708.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0708.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0809.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0809.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0809.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_0910.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_0910.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_0910.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_1011.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_1011.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_1011.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_1112.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_1112.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_1112.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_1213.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_1213.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_1213.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_1314.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_1314.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_1314.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/SP1_1415.csv" afterPath="$PROJECT_DIR$/data/processed_data/SP1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/SP1_1415.csv" afterPath="$PROJECT_DIR$/data/raw/SP1_1415.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/SVM.iml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/SVM.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SoccerBetting.iml" afterPath="$PROJECT_DIR$/.idea/SoccerBetting.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/Theta1.csv" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/Theta1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/Theta1.csv" afterPath="$PROJECT_DIR$/src/ml_model/python/Theta1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/Theta2.csv" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/Theta2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/Theta2.csv" afterPath="$PROJECT_DIR$/src/ml_model/python/Theta2.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/checkNNGradients.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/checkNNGradients.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/clean_data.csv" afterPath="$PROJECT_DIR$/data/clean_data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/clean_data_for_tensorflow_no_header.csv" afterPath="$PROJECT_DIR$/data/clean_data_for_tensorflow_no_header.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/clean_data_no_header.csv" afterPath="$PROJECT_DIR$/data/clean_data_no_header.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/computeCost.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/computeCost.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/computeCostMulti.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/computeCostMulti.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/computeNumericalGradient.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/computeNumericalGradient.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_cleaning.py" afterPath="$PROJECT_DIR$/src/data_cleaning.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data_preprocessing.py" afterPath="$PROJECT_DIR$/src/data_preprocessing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/debugInitializeWeights.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/debugInitializeWeights.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dict-team-names/dic_team_names_binary.csv" afterPath="$PROJECT_DIR$/dict-team-names/dic_team_names_binary.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/dict.txt" afterPath="$PROJECT_DIR$/data/processed_data/dict.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dict-team-names/dict_team_name_dummises.csv" afterPath="$PROJECT_DIR$/dict-team-names/dict_team_name_dummises.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/displayData.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/displayData.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/displayData.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/displayData.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/encodings.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/ex1.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/ex1.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/ex1_multi.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/ex1_multi.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/featureNormalize.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/featureNormalize.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/file0.csv" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/file0.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/file1.csv" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/file1.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/fmincg.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/fmincg.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/fmincg.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/fmincg.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/gaussianKernel.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/gaussianKernel.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/gen_regions.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/gen_regions.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/getVocabList.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/getVocabList.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/gradientDescent.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/gradientDescent.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/gradientDescentMulti.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/gradientDescentMulti.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/historical_data.csv" afterPath="$PROJECT_DIR$/data/historical_data.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/input_data.py" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/input_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/linearKernel.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/linearKernel.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction_for1.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction_for1.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction_for23.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/lrCostFunction_for23.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/mapFeature.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/mapFeature.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/misc.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/modules.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/neuralNetwork.asv" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/neuralNetwork.asv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/neuralNetwork.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/neuralNetwork.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/new-data-raw/new_data_20151120_raw.csv" afterPath="$PROJECT_DIR$/data/new-data-raw/new_data_20151120_raw.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/nnCostFunction.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/nnCostFunction.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/normalEqn.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/normalEqn.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/notes_Bundesliga.txt" afterPath="$PROJECT_DIR$/data/processed_data/notes_Bundesliga.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/notes_Bundesliga.txt" afterPath="$PROJECT_DIR$/data/raw/notes_Bundesliga.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/notes_LaLiga.txt" afterPath="$PROJECT_DIR$/data/processed_data/notes_LaLiga.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/notes_LaLiga.txt" afterPath="$PROJECT_DIR$/data/raw/notes_LaLiga.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/notes_LeChampionnat.txt" afterPath="$PROJECT_DIR$/data/processed_data/notes_LeChampionnat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/notes_LeChampionnat.txt" afterPath="$PROJECT_DIR$/data/raw/notes_LeChampionnat.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/notes_Premier.txt" afterPath="$PROJECT_DIR$/data/processed_data/notes_Premier.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/notes_Premier.txt" afterPath="$PROJECT_DIR$/data/raw/notes_Premier.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/notes_SerieA.txt" afterPath="$PROJECT_DIR$/data/processed_data/notes_SerieA.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/notes_SerieA.txt" afterPath="$PROJECT_DIR$/data/raw/notes_SerieA.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/oneVsAll.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/oneVsAll.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/parse_excel_to_csv.py" afterPath="$PROJECT_DIR$/src/parse_excel_to_csv.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/plotData.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/plotData.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/plotData.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LinearRegression/plotData.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/plotData.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/plotData.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/plotData1.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/plotData1.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/plotDecisionBoundary.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/plotDecisionBoundary.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/porterStemmer.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/porterStemmer.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/predict.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/predict.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/predictOneVsAll.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/predictOneVsAll.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/prediction.ipynb" afterPath="$PROJECT_DIR$/src/ml_model/python/prediction.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/.ipynb_checkpoints/preprocessing-checkpoint.ipynb" afterPath="$PROJECT_DIR$/data/.ipynb_checkpoints/preprocessing-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/processed_data/preprocessing.ipynb" afterPath="$PROJECT_DIR$/data/processed_data/preprocessing.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/raw/preprocessing.ipynb" afterPath="$PROJECT_DIR$/data/raw/preprocessing.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/randInitializeWeights.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/randInitializeWeights.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/readFile.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/readFile.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/read_data.py" afterPath="$PROJECT_DIR$/src/ml_model/python/tensorflow_model/read_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/result.csv" afterPath="$PROJECT_DIR$/data/result.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/running_time.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/running_time.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/scopes/scope_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/sigmoid.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/sigmoid.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/sigmoid.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/sigmoid.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/sigmoidGradient.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/sigmoidGradient.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/sim_LG.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/sim_LG.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/.ipynb_checkpoints/soccer_betting_notebook-checkpoint.ipynb" afterPath="$PROJECT_DIR$/src/ml_model/python/.ipynb_checkpoints/soccer_betting_notebook-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb" afterPath="$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svm.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svm.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svmPredict.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svmPredict.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svmTrain.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/svmTrain.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/betting_strategy/test.m" afterPath="$PROJECT_DIR$/src/betting_strategy/test.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/LG/theta.csv" afterPath="$PROJECT_DIR$/src/ml_model/matlab/LG/theta.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/vcs.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/visualizeBoundary.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/visualizeBoundary.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/visualizeBoundary.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/visualizeBoundary.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/visualizeBoundaryLinear.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/NeuralNetworks/visualizeBoundaryLinear.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/visualizeBoundaryLinear.m" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm (Case Conflict)/visualizeBoundaryLinear.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/workspace.xml" afterPath="$PROJECT_DIR$/src/ml_model/matlab/svm/.idea/workspace.xml" />
     </list>
     <ignored path="SoccerBetting.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,12 +360,12 @@
     <favorites_list name="SoccerBetting" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file leaf-file-name="data_preprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data_preprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+            <state vertical-scroll-proportion="-15.407408">
+              <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
               <folding>
                 <element signature="e#13#32#0" expanded="true" />
               </folding>
@@ -53,7 +373,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="soccer_betting_notebook.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="soccer_betting_notebook.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -62,11 +382,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upset_filter.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="upset_filter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/upset_filter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.28587443">
+              <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding>
                 <element signature="e#13#32#0" expanded="true" />
               </folding>
@@ -100,10 +420,13 @@
       </list>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -127,11 +450,8 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -221,6 +541,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,6 +550,7 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -401,27 +723,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2328841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41065484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2328125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32852387" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41065484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -476,6 +798,33 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/data_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+          <folding>
+            <element signature="e#13#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="-1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/upset_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/data_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -645,30 +994,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/upset_filter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#13#32#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data_preprocessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="106" column="50" selection-start-line="106" selection-start-column="50" selection-end-line="106" selection-end-column="50" />
+        <state vertical-scroll-proportion="-15.407408">
+          <caret line="117" column="22" selection-start-line="117" selection-start-column="22" selection-end-line="117" selection-end-column="22" />
           <folding>
             <element signature="e#13#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ml_model/python/soccer_betting_notebook.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="45" />
+    <entry file="file://$PROJECT_DIR$/src/upset_filter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28587443">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#13#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
