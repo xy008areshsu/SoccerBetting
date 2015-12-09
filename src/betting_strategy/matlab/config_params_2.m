@@ -2,7 +2,7 @@ function [ A, b, Aeq, beq, lb, ub, intcon, f, kellies, bookmaker_row_vector, pro
 %CONFIG_PARAMS Summary of this function goes here
 %   Detailed explanation goes here
 
-num_of_games = length(p_games);
+num_of_games = size(p_games, 1);
 num_of_bookmakers = size(bookmakers, 3);
 num_of_results = size(p_games, 2);
 

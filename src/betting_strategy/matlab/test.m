@@ -130,7 +130,7 @@ p_games = [0.57, 0.26, 0.17;  % Real Madrid vs Getafe
 %            0.44, 0.30, 0.26;  % Watford vs Norwich City
            ];
            
-total_budget = 150;  % Total budget
+total_budget = 100;  % Total budget
 single_bet_budget = 50;   % single bet upper bound
 
 
@@ -141,15 +141,28 @@ single_bet_budget = 50;   % single bet upper bound
 [X,FVAL,EXITFLAG] = intlinprog(f, intcon, A, b, [], [], lb, ub);
 
 bets = (kellies * single_bet_budget) .* X';
-get_back = (kellies * single_bet_budget) .* X' .* bookmaker_row_vector .* prob_row_vector;
+potential_received = (kellies * single_bet_budget) .* X' .* bookmaker_row_vector .* prob_row_vector;
 
 if EXITFLAG == 1 && sum(bets) ~= 0
     fprintf(strcat('Optimal Solution Found! Total Money Bet is: ', num2str(sum(bets)), '\n'));
-    fprintf(strcat('Optimal Solution Found! Total Money Get Back is: ', num2str(sum(get_back)), '\n'));
-    fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(sum(get_back) - sum(bets)), '\n'));
+    fprintf(strcat('Optimal Solution Found! Total Money Get Back is: ', num2str(sum(potential_received)), '\n'));
+    fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(sum(potential_received) - sum(bets)), '\n'));
 %     fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(-FVAL), '\n'));
 elseif EXITFLAG == 1 && sum(bets) == 0
     
     fprintf('No Solution Found!\n')
 end
+
+
+
+results = [1, 3, 2, 2, 3, 2, 1, 2, 1, 2, 1, 1, 3, 1, 2, 1, 3, 2, 2, 3]';
+
+[profit, actual_bets] = actual_profit(bets, results, bookmakers);
+correct_pred_rate = pred_rate(p_games, results);
+
+fprintf(strcat('Total Actual Profit is: ', num2str(profit), '\n'));
+fprintf('We bet on: \n');
+actual_bets
+
+
 
