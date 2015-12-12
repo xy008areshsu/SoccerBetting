@@ -1,4 +1,4 @@
-function [ profit, bets_reshape ] = actual_profit( bets, results, bookmakers )
+function [ profit, total_received, bets_reshape ] = actual_profit( bets, results, bookmakers )
 
 num_of_games = size(results, 1);
 num_of_bookmakers = size(bookmakers, 3);
