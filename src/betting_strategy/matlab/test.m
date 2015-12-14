@@ -81,12 +81,13 @@ bwin = data(:, 7 : 9);
 bookmakers = b365;
 bookmakers(:, :, 2) = bwin;
 % results = [1, 3, 2, 2, 3, 2, 1, 2, 1, 2, 1, 1, 3, 1, 2, 1, 3, 2, 2, 3]';
+results = [2, 1, 2, 1, 3, 1, 3, 3, 2,   2,    2, 2, 3, 1, 1, 2, 1, 1, 1, 2, 1, 3, 2, 1, 1,   1,   1, 3, 1, 1, 2, 2, 1,   3]';
 
 num_of_games = size(p_games, 1);
 num_of_bookmakers = size(bookmakers, 3);
 num_of_results = size(bookmakers, 2);
            
-total_budget = 500;  % Total budget
+total_budget = 1000;  % Total budget
 single_bet_budget = 50;   % single bet upper bound
 
 
@@ -126,17 +127,17 @@ elseif EXITFLAG == 1 && sum(bets) == 0
     
     fprintf('No Solution Found!\n')
 end
-bets_reshape
+% bets_reshape
 
 
 
 
-% [profit, received, actual_bets] = actual_profit(bets, results, bookmakers);
-% correct_pred_rate = pred_rate(p_games, results);
-% 
-% fprintf(strcat('Total Actual Money Get Back is: ', num2str(received), '\n'));
-% fprintf(strcat('Total Actual Profit is: ', num2str(profit), '\n'));
-% fprintf('We bet on: \n');
+[profit, received, actual_bets] = actual_profit(bets, results, bookmakers);
+correct_pred_rate = pred_rate(p_games, results);
+
+fprintf(strcat('Total Actual Money Get Back is: ', num2str(received), '\n'));
+fprintf(strcat('Total Actual Profit is: ', num2str(profit), '\n'));
+fprintf('We bet on: \n');
 % actual_bets
 
 
