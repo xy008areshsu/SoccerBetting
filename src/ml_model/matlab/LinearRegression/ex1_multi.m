@@ -17,15 +17,13 @@
 % data = csvread('ex1data2.txt');
 % X = data(:, 1:2);
 % y = data(:, 3);
-historicaldata = csvread('../../../../data/historical_data.csv', 2);  
-result = historicaldata(:, 17) - historicaldata(:, 18);
-data = historicaldata(:, 1:16);
-data = [data, historicaldata(:, 21 : end)];
-X = data(1:16000, :);
-y = result(1:16000);
+data = csvread('bettings.csv');  
+l = size(data, 1);
+X = data(1 : floor(0.9 * l), 1 : 3);
+y = data(1 : floor(0.9 * l), end);
 m = length(y);
-X_test = data(16001:end, :);
-y_test = result(16001:end);
+X_test = data(floor(0.9 * l) + 1 : end, 1 : 3);
+y_test = data(floor(0.9 * l) + 1 : end, end);
 n = length(y_test);
 
 % Add intercept term to X

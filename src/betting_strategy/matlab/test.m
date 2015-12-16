@@ -74,71 +74,86 @@ clear; clc; close all
 %            0.48, 0.29, 0.23;  % Chelsea vs Bournemouth
 %            ];
        
-data = csvread('121115.csv', 1, 1);
+data = csvread('../../../data/third_party_preds/betegy-121115.csv', 1, 1);
 p_games = data(:, 1 : 3);
 b365 = data(:, 4 : 6);
 bwin = data(:, 7 : 9);
 bookmakers = b365;
 bookmakers(:, :, 2) = bwin;
 % results = [1, 3, 2, 2, 3, 2, 1, 2, 1, 2, 1, 1, 3, 1, 2, 1, 3, 2, 2, 3]';
-results = [2, 1, 2, 1, 3, 1, 3, 3, 2,   2,    2, 2, 3, 1, 1, 2, 1, 1, 1, 2, 1, 3, 2, 1, 1,   1,   1, 3, 1, 1, 2, 2, 1,   3]';
+% results = [2, 1, 2, 1, 3, 1, 3, 3, 2,   2,    2, 2, 3, 1, 1, 2, 1, 1, 1, 2, 1, 3, 2, 1, 1,  1,    1, 3, 1, 1, 2, 2, 1,   1]';
+results = data(:, end);
 
 num_of_games = size(p_games, 1);
 num_of_bookmakers = size(bookmakers, 3);
 num_of_results = size(bookmakers, 2);
            
-total_budget = 1000;  % Total budget
-single_bet_budget = 50;   % single bet upper bound
+total_budgets = 100 : 50 : 1000;  % Total budget
+single_bet_budgets = 50 : 50 : 300;   % single bet upper bound
+
+betting_tracker = zeros(size(total_budgets, 2) * size(single_bet_budgets, 2), 4);
+best_bet = zeros(1, 4);
+
+best_profit = -inf;
+
+k = 1;
+for total_budget = total_budgets
+    for single_bet_budget = single_bet_budgets
+
+        [ A, b, Aeq, beq, lb, ub, intcon, f, kellies, bookmaker_row_vector, prob_row_vector] ...
+            = config_params_2( total_budget, single_bet_budget, p_games, bookmakers);
 
 
-[ A, b, Aeq, beq, lb, ub, intcon, f, kellies, bookmaker_row_vector, prob_row_vector] ...
-    = config_params_2( total_budget, single_bet_budget, p_games, bookmakers);
+        [X,FVAL,EXITFLAG] = intlinprog(f, intcon, A, b, [], [], lb, ub);
+
+        bets = (kellies * single_bet_budget) .* X';
+
+        bets_reshape = zeros(num_of_games, num_of_results, num_of_bookmakers);
+        bets_temp = bets';
+        bets_temp = reshape(bets_temp, num_of_results, length(bets_temp) / num_of_results);
+        bets_temp = bets_temp';
+
+        rows = 1 : size(bets_temp, 1);
+
+        for i = 1 : num_of_bookmakers - 1
+            bets_reshape(:, :, i) = bets_temp(mod(rows, num_of_bookmakers) == i, :);
+        end
 
 
-[X,FVAL,EXITFLAG] = intlinprog(f, intcon, A, b, [], [], lb, ub);
+        bets_reshape(:, :, num_of_bookmakers) = bets_temp(mod(rows, num_of_bookmakers) == 0, :);
 
-bets = (kellies * single_bet_budget) .* X';
 
-bets_reshape = zeros(num_of_games, num_of_results, num_of_bookmakers);
-bets_temp = bets';
-bets_temp = reshape(bets_temp, num_of_results, length(bets_temp) / num_of_results);
-bets_temp = bets_temp';
+        potential_received = (kellies * single_bet_budget) .* X' .* bookmaker_row_vector .* prob_row_vector;
+        potential_profit = sum(potential_received) - sum(bets);
+   
+        if EXITFLAG == 1 && sum(bets) ~= 0
+            fprintf(strcat('Optimal Solution Found! Total Money Bet is: ', num2str(sum(bets)), '\n'));
+            fprintf(strcat('Optimal Solution Found! Total Potential Money Get Back is: ', num2str(sum(potential_received)), '\n'));
+            fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(potential_profit), '\n'));
+        %     fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(-FVAL), '\n'));
+        elseif EXITFLAG == 1 && sum(bets) == 0
 
-rows = 1 : size(bets_temp, 1);
+            fprintf('No Solution Found!\n')
+        end
+        % bets_reshape
 
-for i = 1 : num_of_bookmakers - 1
-    bets_reshape(:, :, i) = bets_temp(mod(rows, num_of_bookmakers) == i, :);
+
+        [profit, received, actual_bets] = actual_profit(bets, results, bookmakers);
+        correct_pred_rate = pred_rate(p_games, results);
+
+        % fprintf(strcat('Total Actual Money Get Back is: ', num2str(received), '\n'));
+        % fprintf(strcat('Total Actual Profit is: ', num2str(profit), '\n'));
+        % fprintf('We bet on: \n');
+        % actual_bets
+        
+        betting_tracker(k, :) = [total_budget, single_bet_budget, potential_profit, profit];
+
+        if profit > best_profit
+            best_strategy = actual_bets;
+            best_profit = profit;
+            best_bet = [total_budget, single_bet_budget, potential_profit, profit];
+        end
+        
+        k = k + 1;
+    end
 end
-
-
-
-bets_reshape(:, :, num_of_bookmakers) = bets_temp(mod(rows, num_of_bookmakers) == 0, :);
-
-
-
-potential_received = (kellies * single_bet_budget) .* X' .* bookmaker_row_vector .* prob_row_vector;
-
-if EXITFLAG == 1 && sum(bets) ~= 0
-    fprintf(strcat('Optimal Solution Found! Total Money Bet is: ', num2str(sum(bets)), '\n'));
-    fprintf(strcat('Optimal Solution Found! Total Potential Money Get Back is: ', num2str(sum(potential_received)), '\n'));
-    fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(sum(potential_received) - sum(bets)), '\n'));
-%     fprintf(strcat('Optimal Solution Found! Total Potential Profit is: ', num2str(-FVAL), '\n'));
-elseif EXITFLAG == 1 && sum(bets) == 0
-    
-    fprintf('No Solution Found!\n')
-end
-% bets_reshape
-
-
-
-
-[profit, received, actual_bets] = actual_profit(bets, results, bookmakers);
-correct_pred_rate = pred_rate(p_games, results);
-
-fprintf(strcat('Total Actual Money Get Back is: ', num2str(received), '\n'));
-fprintf(strcat('Total Actual Profit is: ', num2str(profit), '\n'));
-fprintf('We bet on: \n');
-% actual_bets
-
-
-
