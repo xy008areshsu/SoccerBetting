@@ -74,7 +74,7 @@ clear; clc; close all
 %            0.48, 0.29, 0.23;  % Chelsea vs Bournemouth
 %            ];
        
-data = csvread('../../../data/third_party_preds/betegy-121115.csv', 1, 1);
+data = csvread('../../../data/third_party_preds/betegy-121615.csv', 1, 1);
 p_games = data(:, 1 : 3);
 b365 = data(:, 4 : 6);
 bwin = data(:, 7 : 9);
